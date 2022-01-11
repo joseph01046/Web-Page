@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<title>Jose Miguel</title>
+
+		<meta
+			name="description"
+			content="If you're looking for somebody to bring life to your business or personal webpage, search no more! I can make your static page look great and be responsive!"
+		/>
+		<meta name="author" content="Jose Miguel" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./img/web-favicon-32x32.png"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/2c36e9b7b1.js"
+			crossorigin="anonymous"
+		></script>
+
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#Proyectos">PROJECTS.</a></li>
+					<li><a href="info.html">IMAGES.</a></li>
+					<li><a href="#" id="News">NEWS.</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content-area">
+			<!-- Title of my page. -->
+			<div class="myname">
+				<p class="n1" id="back-image">JOSE MIGUEL</p>
+			</div>
+
+			<!-- Grey wave Svg. -->
+			<div style="height: 80px; overflow: hidden">
+				<svg
+					viewBox="0 0 500 150"
+					preserveAspectRatio="none"
+					style="height: 100%; width: 100%"
+				>
+					<path
+						d="M-1.41,102.13 C162.24,165.28 261.57,16.28 502.54,111.02 L500.00,0.00 L0.00,0.00 Z"
+						style="stroke: none; fill: #1b1b1b"
+					></path>
+				</svg>
+			</div>
+
+			<!-- Modal for news and page updates. -->
+			<div class="news-modal" id="Modal">
+				<div class="darkground"></div>
+				<button class="Close" id="Close-news">CLOSE</button>
+
+				<!-- Display the countdown timer in an element -->
+				<!-- <p class="Count-down" id="demo"></p> -->
+				<p>
+					-06/01/22: Projects updated: "NFT preview card" added.
+					<br />
+					<br />
+					-10/11/21: Projects updated: "Carpentry" added.
+					<br />
+					<br />
+					-14/08/21: Projects updated: "generic business page" added.
+					<br />
+					<br />
+					-14/06/21: Projects updated: "Blog" added.
+					<br />
+					<br />
+					- 11/06/21: Webpage first deploy.
+				</p>
+			</div>
+
+			<div class="articles">
+				<article>
+					<h2>FREELANCER.</h2>
+					<ul>
+						<li>Front-end developer.</li>
+						<li>Experience using SCSS.</li>
+						<li>Experience using Javascript.</li>
+						<li>Experience using Photoshop.</li>
+					</ul>
+				</article>
+
+				<button class="contact-me" onclick="Discover()">
+					<span class="text">Contact Me</span>
+				</button>
+
+				<div id="formWrapper" class="formWrapper hidden">
+					<form
+						class="form__group field"
+						id="my-form"
+						action="https://formspree.io/f/mqkwgkro"
+						method="POST"
+					>
+						<input
+							type="input"
+							class="form__field"
+							placeholder="Name"
+							name="name"
+							id="name"
+							required
+						/>
+						<input
+							type="email"
+							class="form__field"
+							placeholder="Email"
+							name="email"
+							id="email"
+							required
+						/>
+						<textarea name="message" id="textarea"></textarea>
+						<button class="button" id="my-form-button">
+							Submit
+						</button>
+						<p id="my-form-status"></p>
+					</form>
+				</div>
+
+				<!-- Web projects -->
+				<article id="Web">
+					<h2>WEB</h2>
+				</article>
+			</div>
+
+			<!--Start of the cards section.  -->
+			<section class="portfolio" id="Proyectos">
+				<div class="card-area">
+					<!-- Start of card 1. -->
+					<div class="card">
+						<!-- Every card has a color line on top. -->
+						<div class="top-line n1" id="back-image"></div>
+
+						<!-- A title and an image. -->
+						<a href="project/news.html">
+							<h3 class="n1" id="back-image">
+								generic business page.
+							</h3>
+						</a>
+						<div class="card-image">
+							<a href="project/news.html">
+								<img
+									src="img/preview-news.jpg"
+									alt="news page preview"
+								/>
+							</a>
+						</div>
+
+						<!-- This is the description of the project. -->
+						<p id="card-p">
+							A simple space with two articles. Is inspired on a
+							formal and sober website. Has a palette of grays and
+							muted colors to offer the information in a simple
+							and understandable way.
+						</p>
+
+						<!-- This is secondary info. -->
+						<footer id="card-footer">
+							Used: Basic Css animations and javascript.
+						</footer>
+					</div>
+
+
+					<!-- Start of card 4. -->
+					<div class="card">
+						<!-- Every card has a color line on top. -->
+						<div class="top-line n1" id="back-image"></div>
+
+						<!-- A title and an image. -->
+						<a href="project/nft-card.html">
+							<h3 class="n1" id="back-image">NFT preview card.</h3>
+						</a>
+						<div class="card-image">
+							<a href="project/nft-card.html">
+								<img
+									src="img/preview-nft.jpg"
+									alt="NFT page preview"
+								/>
+							</a>
+						</div>
+
+						<!-- This is the description of the project. -->
+						<p id="card-p">
+							Not much to say. A simple card showcasing a NFT, blue color palette and neon borders. 
+						</p>
+
+						<!-- This is secondary info. -->
+						<footer id="card-footer">
+							First challenge of frontendmentor.io
+						</footer>
+					</div>
+
+
+
+
+					<!-- Start of card 3. -->
+					<div class="card">
+						<!-- Every card has a color line on top. -->
+						<div class="top-line n1" id="back-image"></div>
+
+						<!-- A title and an image. -->
+						<a href="project/brad.html">
+							<h3 class="n1" id="back-image">carpentry.</h3>
+						</a>
+						<div class="card-image">
+							<a href="project/brad.html">
+								<img
+									src="img/preview-brads.jpg"
+									alt="carpentry page preview"
+								/>
+							</a>
+						</div>
+
+						<!-- This is the description of the project. -->
+						<p id="card-p">
+							A design-oriented website with the function of
+							displaying the company's slogan and publicizing
+							previous works.
+						</p>
+
+						<!-- This is secondary info. -->
+						<footer id="card-footer">
+							Used: Figma to design user interface.
+						</footer>
+					</div>
+				</div>
+			</section>
+			<!-- End of card section. -->
+		</div>
+
+		<p class="buttonTip">
+			You don't like the title's colors
+			<strong class="n1" id="back-image">¡Change them!</strong>
+		</p>
+		<div class="colorWrapper">
+			<button
+				class="colorChanger n2"
+				onclick="changeColor('n2')"
+			></button>
+			<button
+				class="colorChanger n1"
+				onclick="changeColor('n1')"
+			></button>
+			<button
+				class="colorChanger n3"
+				onclick="changeColor('n3')"
+			></button>
+			<button
+				class="colorChanger n4"
+				onclick="changeColor('n4')"
+			></button>
+			<button
+				class="colorChanger n5"
+				onclick="changeColor('n5')"
+			></button>
+			<button
+				class="colorChanger n6"
+				onclick="changeColor('n6')"
+			></button>
+		</div>
+
+		<footer id="page-footer">
+			<p>JOSE MIGUEL - 2021</p>
+		</footer>
+
+		<script src="js/main.js"></script>
+	</body>
+
+	<!-- <script src="main.js"></script> -->
+</html>
